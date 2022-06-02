@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-color: #ecefef;
+    
+}
+
+.flex-container {
+    display: flex;
+    min-height: 80px;
+    justify-content: space-between;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;    
+}
+.flex-container_child {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.flex-info {
+    display: flex;
+}
+
+.flex-setings {
+    display: flex;
+    margin-right: 10px;
+}
+
+
+.flex-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 5px;
+
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 13px 6px 13px 6px;
+}
+
+.logo {
+    display: flex;
+    color: rgb(17, 140, 255);
+    width: 180px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 50px;
+    
+    transition: .2s;
+
+}
+
+.flex-container a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .2s;
+}
+.logo:hover {
+    transform: scale(110%);
+    transition: .5s;
+}
+
+.flex-container a:hover {
+    transform: scale(110%);
+    transition: .5s;
+}
+
+.flex-container a::after {
+    content: '';
+    margin-top: 4px;
+    display: block;
+    width: 100%;
+    height: 3px;
+    transform: scaleX(0);
+    background-color: rgb(0, 200, 255);
+    transition: all 0.2s;
+}
+
+.flex-container a:hover::after {
+    transform: scaleX(1);
+}
+
+.main {
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+
+}
+:root {
+    --info_me-color: rgb(216, 216, 216);
+}
+.info_me {
+
+    background: white;
+    width: 60%;
+    margin: 40px;
+    padding: 30px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+
+
+.info_me:hover { 
+    transform: scale(105%);
+    transition: 0.2s;
+    box-shadow: 10px 1px 30px rgb(165, 164, 164);
+    background-color: var(--info_me-color);/*какая-то херь, можно использовать для смены темы на устройстве*/
+}
+
+.mini_info_me {
+    transition: .2s;
+    top: 100px;
+    width: 20%;
+    margin: 40px 10px 40px 40px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.mini_info_me:hover {
+    box-shadow: 10px 1px 30px rgb(165, 164, 164);
+    transform: scale(105%);
+    transition: .2s;
+}
+
+.container_picture {
+display: flex;
+flex-wrap: wrap;
+max-width: 850px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.image_wh {
+    margin: 20px 20px 20px 20px;
+
+}
+
+
+.image1 {
+    background: url(https://s1.1zoom.me/b5050/971/422550-Kycb_1920x1080.jpg);
+    width: 384px;
+    height: 216px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transition: .4s;
+}
+
+.image1:hover {
+    cursor: pointer;
+    transform: scale(105%);
+    box-shadow: 10px 1px 30px rgb(99, 149, 251);
+    transition: .4s;
+}
+
+.image2 {
+    background: url(https://images.wallpaperscraft.ru/image/single/sakhara_pustynya_pesok_nebo_120473_1920x1080.jpg);
+    width: 384px;
+    height: 216px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transition: .4s;
+}
+
+.image2:hover {
+    cursor: pointer;
+    transform: scale(105%);
+    transition: .4s;
+}
+
+.image3 {
+    background: url(https://images.wallpaperscraft.ru/image/single/les_tuman_vid_sverhu_129318_1920x1080.jpg);
+    width: 384px;
+    height: 216px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transition: .4s;
+}
+
+.image3:hover {
+    cursor: pointer;
+    transform: scale(105%);
+    transition: .4s;
+}
+
+.image4 {
+    width: 384px;
+    height: 216px;
+    background: url(https://data.1freewallpapers.com/download/snow-covered-rock-mountains-in-blue-sky-background-during-daytime-mountains.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transition: .4s;
+}
+
+.image4:hover {
+    cursor: pointer;
+    transform: scale(105%);
+    transition: .4s;
+}
+
+.image1 , .image2 , .image3 , .image4 {
+
+}
+
+.container_picture h4 {
+    margin-top: 10px;
+    font-size: 30px;
+    justify-content: ;
+    text-align: center;
+    font-weight: 200;
+}
